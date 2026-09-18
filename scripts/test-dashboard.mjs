@@ -221,6 +221,10 @@ function runDashboardAuditSuite() {
   const filteredCompleted = filterByStatus("Completed", updatedDataset);
   assert(!filteredDelayed.some((j) => j.jobId === "JOB-101"), "JOB-101 is NO LONGER visible under Delayed filter");
   assert(filteredCompleted.some((j) => j.jobId === "JOB-101"), "JOB-101 is NOW visible under Completed filter");
+  assert(formatDisplayDate("2026-09-18") === "18 Sep 2026", "formatDisplayDate: '2026-09-18' formats to '18 Sep 2026'");
+  assert(isDueToday("2026-09-18") === true, "isDueToday: '2026-09-18' is today");
+  assert(isOverdue("2026-09-15") === true, "isOverdue: '2026-09-15' is overdue");
+  assert(isOverdue("2026-09-25") === false, "isOverdue: '2026-09-25' is not overdue");
 
   console.log(`\n=======================================================`);
   console.log(`AUDIT RESULTS: ${passed}/${total} assertions PASSED with ZERO failures.`);
