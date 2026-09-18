@@ -1,5 +1,9 @@
 # Production Control Dashboard
 
+**Live Demo**: [https://production-hub-xi.vercel.app/](https://production-hub-xi.vercel.app/)
+
+---
+
 ## Overview
 
 The **Production Control Dashboard** is an enterprise factory operations management application built for manufacturing Operations Managers. It provides a real-time operational interface to monitor factory work orders, identify delayed jobs and approaching delivery deadlines, inspect machine assignments and operational notes, and perform in-place job status updates.
