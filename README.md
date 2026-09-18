@@ -102,7 +102,7 @@ The drawer presents:
 The detail drawer features an in-place status management workflow:
 
 1. The manager selects a new status from the dropdown (`Pending`, `In Progress`, `Delayed`, `Completed`).
-2. The "Update Status" button becomes active and displays an explanatory prompt indicating the pending change.
+2. The "Update Status" button becomes active and displays an explanatory note indicating the pending change.
 3. Clicking "Update Status" commits the transition to local React state.
 4. An immediate confirmation alert appears in the drawer.
 5. The drawer status badge, table row badge, and summary metrics update in real time without a page refresh.
